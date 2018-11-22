@@ -1,0 +1,64 @@
+mysql> select count(sal),sal,max(empno) from emp group by sal having count(sal)=2;
++------------+------+------------+
+| count(sal) | sal  | max(empno) |
++------------+------+------------+
+|          2 | 1250 |       7654 |
+|          2 | 3000 |       7902 |
++------------+------+------------+
+2 rows in set (0.00 sec)
+
+
+
+mysql> create table GouWuChe(
+    -> id int auto_increment primary key,
+    -> like varchar(45),
+    -> rebate varchar(45),
+    -> wish varchar(45));
+mysql> insert into GouWuChe value(1,"shoes","yes","shengguan");
+mysql> select*from GouWuChe;
++----+-------+--------+-----------+
+| id | love  | rebate | wish      |
++----+-------+--------+-----------+
+|  1 | shoes | yes    | shengguan |
++----+-------+--------+-----------+
+1 row in set (0.00 sec)
+
+mysql> insert into GouWuChe value
+    -> (2,"windbreak","no","facai"),
+    -> (3,"cat","no","qipi"),
+    -> (4,"dog","yes","shengzi"); 
+mysql> select*from GouWuChe;
++----+-----------+--------+-----------+
+| id | love      | rebate | wish      |
++----+-----------+--------+-----------+
+|  1 | shoes     | yes    | shengguan |
+|  2 | windbreak | no     | facai     |
+|  3 | cat       | no     | qipi      |
+|  4 | dog       | yes    | shengzi   |
++----+-----------+--------+-----------+
+4 rows in set (0.00 sec)
+
+mysql> update GouWuChe set wish="maifang" where id=3;
+mysql> select*from GouWuChe;
++----+-----------+--------+-----------+
+| id | love      | rebate | wish      |
++----+-----------+--------+-----------+
+|  1 | shoes     | yes    | shengguan |
+|  2 | windbreak | no     | facai     |
+|  3 | cat       | no     | maifang   |
+|  4 | dog       | yes    | shengzi   |
++----+-----------+--------+-----------+
+4 rows in set (0.00 sec)
+
+mysql> delete from GouWuChe where id=4;
+mysql> select * from GouWuChe;
++----+-----------+--------+-----------+
+| id | love      | rebate | wish      |
++----+-----------+--------+-----------+
+|  1 | shoes     | yes    | shengguan |
+|  2 | windbreak | no     | facai     |
+|  3 | cat       | no     | maifang   |
++----+-----------+--------+-----------+
+3 rows in set (0.00 sec)
+
+
