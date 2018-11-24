@@ -1,0 +1,103 @@
+1.
+mysql> create table shoucang(
+    -> id int primary key not null auto_increment,
+    -> name varchar(45));
+mysql> insert into shoucang(name) values
+    -> ("xingxing"),
+    -> ("EAV"),
+    -> ("LEAGUE OF LEGENDS"),
+    -> ("DNF");
+mysql> select*from shoucang;
++----+-------------------+
+| id | name              |
++----+-------------------+
+|  1 | xingxing          |
+|  2 | EAV               |
+|  3 | LEAGUE OF LEGENDS |
+|  4 | DNF               |
++----+-------------------+
+4 rows in set (0.00 sec)
+mysql> delete from shoucang where name= "xingxing";
+mysql> select * from shoucang;
++----+-------------------+
+| id | name              |
++----+-------------------+
+|  2 | EAV               |
+|  3 | LEAGUE OF LEGENDS |
+|  4 | DNF               |
++----+-------------------+
+3 rows in set (0.00 sec)
+
+mysql> select name from shoucang;
++-------------------+
+| name              |
++-------------------+
+| EAV               |
+| LEAGUE OF LEGENDS |
+| DNF               |
++-------------------+
+3 rows in set (0.00 sec)
+
+
+2.
+mysql> create table CCTV6( 
+    -> id int primary key not null auto_increment,
+    -> name varchar(45) not null,
+    -> time int,
+    -> daoyan varchar(45),          
+    -> pingfen int);
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> insert into CCTV6(id,name,time,daoyan,pingfen)values
+    -> (1,"Ralph Breaks the lnternet",2018-11-23,"Rich Moore",9.1), 
+    -> (2,"A Cool Fish",2018-11-16,"Xiaozhi Rao",9.2),                  
+    -> (3,"Venom",2018-11-09,"Ruben Fleischer",9.3);                    
+Query OK, 3 rows affected (0.06 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> select * from CCTV6;
++----+---------------------------+------+-----------------+---------+
+| id | name                      | time | daoyan          | pingfen |
++----+---------------------------+------+-----------------+---------+
+|  1 | Ralph Breaks the lnternet | 1984 | Rich Moore      |       9 |
+|  2 | A Cool Fish               | 1991 | Xiaozhi Rao     |       9 |
+|  3 | Venom                     | 1998 | Ruben Fleischer |       9 |
++----+---------------------------+------+-----------------+---------+
+3 rows in set (0.00 sec)
+
+mysql> select * from CCTV6 where name like "%cool%";
++----+-------------+------+-------------+---------+
+| id | name        | time | daoyan      | pingfen |
++----+-------------+------+-------------+---------+
+|  2 | A Cool Fish | 1991 | Xiaozhi Rao |       9 |
++----+-------------+------+-------------+---------+
+1 row in set (0.06 sec)
+
+mysql> select * from CCTV6 where daoyan like "%zhi%";
++----+-------------+------+-------------+---------+
+| id | name        | time | daoyan      | pingfen |
++----+-------------+------+-------------+---------+
+|  2 | A Cool Fish | 1991 | Xiaozhi Rao |       9 |
++----+-------------+------+-------------+---------+
+1 row in set (0.00 sec)
+
+mysql> select * from CCTV6 where time = 1984;
++----+---------------------------+------+------------+---------+
+| id | name                      | time | daoyan     | pingfen |
++----+---------------------------+------+------------+---------+
+|  1 | Ralph Breaks the lnternet | 1984 | Rich Moore |       9 |
++----+---------------------------+------+------------+---------+
+1 row in set (0.04 sec)
+
+mysql> select * from CCTV6 where pingfen> 8;
++----+---------------------------+------+-----------------+---------+
+| id | name                      | time | daoyan          | pingfen |
++----+---------------------------+------+-----------------+---------+
+|  1 | Ralph Breaks the lnternet | 1984 | Rich Moore      |       9 |
+|  2 | A Cool Fish               | 1991 | Xiaozhi Rao     |       9 |
+|  3 | Venom                     | 1998 | Ruben Fleischer |       9 |
++----+---------------------------+------+-----------------+---------+
+3 rows in set (0.00 sec)
+
+
+
