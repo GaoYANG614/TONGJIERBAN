@@ -1,0 +1,66 @@
+日历图   代码！！！！！！！！！
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" cellspacing="0" cellpadding="10" align="center" bordercolor="#8B8B7A">
+    <tr  style="background-color:#E0FFFF">
+        <td align="center" width="80">星期日</td>
+        <td align="center" width="80">星期一</td>
+        <td align="center" width="80">星期二</td>
+        <td align="center" width="80">星期三</td>
+        <td align="center" width="80">星期四</td>
+        <td align="center" width="80">星期五</td>
+        <td align="center" width="80">星期六</td>
+    </tr>
+    <tr>
+        <td align="center" style="color:#EEE8AA"><b><p style="color:#EEE685"><span style="font-size:25px;">28</span></p></b><span style="font-size:10px;">二十</span></td>
+        <td align="center" style="color:#EEE8AA"><b><p style="color:#B4CDCD"><span style="font-size:25px;">29</span></p></b><span style="font-size:10px;">廿一</span></td>
+        <td align="center" style="color:#EEE8AA"><b><p style="color:#B4CDCD"><span style="font-size:25px;">30</span></p></b><span style="font-size:10px;">廿二</span></td>
+        <td align="center" style="color:#EEE8AA"><b><p style="color:#B4CDCD"><span style="font-size:25px;">31</span></p></b><span style="font-size:10px;">廿三</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">1</span></p></b><span style="font-size:10px;">廿四</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">2</span></p></b><span style="font-size:10px;">廿五</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#CDAD00"><span style="font-size:25px;">3</span></p></b><span style="font-size:10px;">廿六</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="color:#636363"><b><p style="color:#CDAD00"><span style="font-size:25px;">4</span></p></b><span style="font-size:10px;">廿七</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">5</span></p></b><span style="font-size:10px;">廿八</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">6</span></p></b><span style="font-size:10px;">廿九</span></td>
+        <td align="center" style="color:#CDAD00"><b><p style="color:#0000AA"><span style="font-size:25px;">7</span></p></b><span style="font-size:10px;">立冬</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">8</span></p></b><span style="font-size:10px;">十月</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">9</span></p></b><span style="font-size:10px;">初一</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#CDAD00"><span style="font-size:25px;">10</span></p></b><span style="font-size:10px;">初二</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="color:#636363"><b><p style="color:#CDAD00"><span style="font-size:25px;">11</span></p></b><span style="font-size:10px;">初三</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">12</span></p></b><span style="font-size:10px;">初四</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">13</span></p></b><span style="font-size:10px;">初五</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">14</span></p></b><span style="font-size:10px;">初六</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">15</span></p></b><span style="font-size:10px;">初七</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">16</span></p></b><span style="font-size:10px;">初八</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#CDAD00"><span style="font-size:25px;">17</span></p></b><span style="font-size:10px;">初九</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="color:#636363"><b><p style="color:#CDAD00"><span style="font-size:25px;">18</span></p></b><span style="font-size:10px;">初十</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">19</span></p></b><span style="font-size:10px;">十一</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">20</span></p></b><span style="font-size:10px;">十二</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">21</span></p></b><span style="font-size:10px;">十三</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">22</span></p></b><span style="font-size:10px;">十四</span></td>
+        <td align="center" style="color:#CDAD00"><b><p style="color:#0000AA"><span style="font-size:25px;">23</span></p></b><span style="font-size:10px;">下元节</span></td>
+        <td align="center" style="color:#636363;background-color:#B7B7B7"><b><p style="color:#CDAD00"><span style="font-size:25px;">24</span></p></b><span style="font-size:10px;">十六</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="color:#636363"><b><p style="color:#CDAD00"><span style="font-size:25px;">25</span></p></b><span style="font-size:10px;">十七</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">26</span></p></b><span style="font-size:10px;">十八</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">27</span></p></b><span style="font-size:10px;">十九</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">28</span></p></b><span style="font-size:10px;">二十</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">29</span></p></b><span style="font-size:10px;">廿一</span></td>
+        <td align="center" style="color:#636363"><b><p style="color:#0000AA"><span style="font-size:25px;">30</span></p></b><span style="font-size:10px;">廿二</span></td>
+        <td align="center" style="color:#EEE8AA"><b><p style="color:#EEE685"><span style="font-size:25px;">1</span></p></b><span style="font-size:10px;">廿三</span></td>
+    </tr>
+</table>
+</body>
+</html>
